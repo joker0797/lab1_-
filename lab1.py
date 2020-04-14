@@ -2,6 +2,7 @@
 #=============Программа 1:Метод замены символов одинакового начертания============
 import codecs # модуль для открыта файла
 #-----------------
+# in ACSII table russian alphabet 'a' = 1072 .... 'я' = 1104
 def changesym(s, word): #encode symbol in file 
     temp1 = '' 
     temp2 = ''
