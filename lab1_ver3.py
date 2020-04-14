@@ -1,3 +1,4 @@
+#. В третьей программе знак короткого тире «–» перед длинным «—» означает 0, наоборот – 1. 
 import codecs
 import random
 
@@ -19,10 +20,10 @@ def spec_sym(s, word):
         elif ord(s[i]) != 13:
             temp2 += s[i]
         i += 1
-    temp2 += chr(8195)
+    temp2 += chr(8195) # сперциальный симбол 
     j = i
     for j in range(len(s)):
-        if s[j] == '—' and random.getrandbits(1) == 0: #random.getrandbits(1) return 0 /1
+        if s[j] == '—' and random.getrandbits(1) == 0: #random.getrandbits(1) return 0 or 1
             temp2 += '—–'
         elif s[j] == '—' and random.getrandbits(1) == 1:
             temp2 += '–—'
